@@ -1,0 +1,61 @@
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
+    shortdescription="Golf Course"
+    description="Adds presets for golf course feature tagging"
+    author="coleman"
+    version="0.0.1">
+
+    <group name="Golf Course">
+
+        <item name="Fairway" type="way,relation">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=golf_course" />
+            <label text="Fairway" />
+            <key key="golf" value="fairway" />
+            <key key="landuse" value="grass" />
+        </item>
+
+        <item name="Tee" type="way,relation">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=golf_course" />
+            <label text="Tee" />
+            <key key="golf" value="fairway" />
+            <key key="landuse" value="grass" />
+            <text key="ref" text="Tee Color" default="" delete_if_empty="true" />
+        </item>
+
+        <item name="Green" type="way">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=golf_course" />
+            <label text="Tee" />
+            <key key="golf" value="green" />
+            <key key="landuse" value="grass" />
+        </item>
+
+        <item name="Rough" type="way,relation">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=golf_course" />
+            <label text="Rough" />
+            <key key="golf" value="rough" />
+            <key key="landuse" value="grass" />
+        </item>
+
+        <item name="Water Hazard" type="way,relation">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=golf_course" />
+            <label text="Water Hazard" />
+            <key key="golf" value="water_hazard" />
+            <key key="natural" value="water" />
+        </item>
+
+        <item name="Bunker" type="way">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=golf_course" />
+            <label text="Bunker" />
+            <key key="golf" value="bunker" />
+            <key key="natural" value="sand" />
+        </item>
+
+        <item name="Hole" type="way">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=golf_course" />
+            <label text="Hole" />
+            <key key="golf" value="hole" />
+            <text key="ref" text="Hole Number" default="" delete_if_empty="true" />
+        </item>
+
+    </group>
+    
+</presets>
